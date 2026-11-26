@@ -434,3 +434,100 @@ footer p {
         transition: none !important;
     }
 }
+
+/* TELAS DE LOGIN E CRIAÇÃO DE CONTA */
+
+.pagina-autenticacao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 24px 0;
+}
+
+.card-autenticacao {
+    width: 100%;
+    max-width: 460px;
+}
+
+.card-autenticacao > p {
+    margin: 6px 0 18px;
+    color: var(--mudo);
+}
+
+.formulario-autenticacao {
+    width: 100%;
+    max-width: 100%;
+    margin-top: 18px;
+}
+
+.formulario-autenticacao .campo {
+    grid-column: 1 / -1;
+}
+
+.formulario-autenticacao .acoes-form {
+    width: 100%;
+}
+
+.formulario-autenticacao .botao {
+    width: 100%;
+}
+
+.link-autenticacao {
+    margin-top: 24px;
+    text-align: center;
+}
+
+.link-autenticacao p {
+    margin: 0 0 12px;
+    color: var(--mudo);
+}
+
+.link-autenticacao .botao {
+    width: 100%;
+}
+
+.mensagem-sucesso {
+    padding: 12px 16px;
+    margin-top: 16px;
+    color: var(--tinta);
+    background: #e9eeea;
+    border: 1px solid var(--linha);
+    border-left: 4px solid var(--alerta);
+    border-radius: var(--raio);
+    font-size: 0.95rem;
+}
+
+/* Manter o formulário de saída invisível */
+
+#formLogout {
+    display: none;
+}
+
+/* Autenticação em celulares */
+
+@media (max-width: 640px) {
+    .pagina-autenticacao {
+        align-items: flex-start;
+        padding: 12px 0;
+    }
+
+    .card-autenticacao {
+        max-width: 100%;
+    }
+
+    .formulario-autenticacao {
+        padding: 20px;
+    }
+}
+/* MENSAGEM DE ERRO NA AUTENTICAÇÃO */
+
+.mensagem-erro {
+    padding: 12px 16px;
+    margin-top: 16px;
+    color: var(--perigo);
+    background: #fff1f0;
+    border: 1px solid var(--linha);
+    border-left: 4px solid var(--perigo);
+    border-radius: var(--raio);
+    font-size: 0.95rem;
+}
